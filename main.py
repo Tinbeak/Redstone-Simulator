@@ -24,7 +24,7 @@ def renderLayer(layer):#Blits a layer to the screen
   for row in layer:
     for block in row:
       if block.texture != None:
-        block.updateTexture()`
+        block.updateTexture()
         screen.blit(block.texture,gamePos_to_screenPos(block))
       else:
         screen.blit(grid_square,gamePos_to_screenPos(block))
